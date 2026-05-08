@@ -1695,4 +1695,140 @@ footer.main-footer {
   .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
   .stat-divider { display: none; }
   .underline-stat { gap: 2rem; }
+  .contact-card {
+    padding: 2rem 1.5rem;
+  }
+  .contact-card .person { font-size: 1.6rem; }
+  .contact-card p { font-size: 1.05rem; }
+  .contact-methods {
+    width: 100%;
+  }
+  .contact-methods .btn-primary,
+  .contact-methods .btn-dark {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  .contact-methods a {
+    font-size: 0.85rem;
+    word-break: break-word;
+    text-align: center;
+    max-width: 100%;
+  }
+
+  /* ─── CTA section (every page footer CTA) ─── */
+  .cta-actions {
+    flex-direction: column;
+    width: 100%;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+  .cta-actions .btn-primary,
+  .cta-actions .btn-outline,
+  .cta-actions .btn-outline-dark,
+  .cta-actions .btn-dark {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* ─── Page hero (subpages) ─── */
+  .page-hero h1 {
+    font-size: clamp(2rem, 7vw, 3rem);
+    line-height: 1.15;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+  .page-hero p.lede {
+    font-size: 1.1rem;
+  }
+  .breadcrumb {
+    font-size: 0.6rem !important;
+    word-break: break-word;
+    line-height: 1.6;
+  }
+
+  /* ─── Standalone CTAs in prose / center-aligned (PreK, Discover, etc.) ─── */
+  .prose .btn-primary,
+  .prose .btn-outline-dark,
+  [style*="text-align:center"] > .btn-primary,
+  [style*="text-align: center"] > .btn-primary,
+  [style*="text-align:center"] > .btn-outline-dark,
+  [style*="text-align: center"] > .btn-outline-dark {
+    width: 100%;
+    max-width: 360px;
+    justify-content: center;
+    text-align: center;
+    white-space: normal;
+    line-height: 1.4;
+  }
+
+  /* ─── Person feature (Our Team page) ─── */
+  .person-feature { padding: 5rem 1.25rem; }
+  .person-photo-decor {
+    right: 0.75rem;
+    bottom: -1rem;
+    padding: 1rem 1.25rem;
+    max-width: 200px;
+  }
+  .person-photo-decor .num { font-size: 2rem; }
+  .person-photo-decor .label { font-size: 0.55rem; }
+  .person-content h2 {
+    font-size: clamp(2rem, 6vw, 2.6rem);
+  }
+  .person-content .lead-quote {
+    font-size: 1.15rem;
+    padding-left: 1rem;
+  }
+  .credentials {
+    gap: 0.5rem;
+  }
+  .credential {
+    font-size: 0.65rem;
+    padding: 0.35rem 0.85rem;
+  }
+  .person-actions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+  .person-actions .btn-primary,
+  .person-actions .btn-dark {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  .contact-line {
+    align-items: flex-start;
+  }
+  .contact-line a {
+    font-size: 0.8rem;
+    word-break: break-word;
+  }
+
+  /* ─── Pull quotes inside prose ─── */
+  .pull-quote {
+    font-size: 1.3rem;
+    padding-left: 1rem;
+    margin: 1.75rem 0;
+  }
+  .ikigai-text .pull {
+    font-size: 1.25rem;
+    padding: 1.25rem 0;
+  }
+  .ikigai-text .btn-outline-dark {
+    width: 100%;
+    max-width: 360px;
+    justify-content: center;
+    text-align: center;
+  }
+
+  /* ─── Prose paragraphs / body content ─── */
+  .prose h3 { font-size: 1.5rem; }
+  .prose p { font-size: 1rem; }
+  .prose ul li { font-size: 0.98rem; }
+
+  /* ─── Schools strip wrapping ─── */
+  .schools-list { gap: 0.4rem; }
+  .school-item:not(:last-child)::after { display: none; }
 }
