@@ -647,6 +647,10 @@ h3 {
   color: var(--gold);
   line-height: 1;
   letter-spacing: -0.02em;
+  min-height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .stat-num.text-stat { font-size: 2rem; font-style: italic; }
 .stat-label {
@@ -1624,9 +1628,28 @@ footer.main-footer {
   section { padding: 5rem 1.25rem; }
   .hero-inner { padding: 7rem 1.25rem 4rem; }
   .page-hero { padding: 9rem 1.25rem 4rem; }
-  .hero { min-height: auto; }
+  .hero {
+    min-height: auto;
+    flex-direction: column;
+  }
+  .hero-tag {
+    font-size: 0.62rem;
+    letter-spacing: 0.2em;
+  }
+  .hero-btns {
+    flex-direction: column;
+    width: 100%;
+    align-items: stretch;
+  }
+  .hero-btns .btn-primary,
+  .hero-btns .btn-outline {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
   .hero-credit {
     position: static;
+    width: 100%;
     background: var(--forest-deep);
     padding: 2.5rem 1.25rem;
     border-top: 1px solid rgba(201,169,110,0.22);
