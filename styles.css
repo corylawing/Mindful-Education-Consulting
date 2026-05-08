@@ -277,7 +277,7 @@ nav.main-nav.scrolled {
   min-height: 100vh;
   overflow: hidden;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   color: #fff;
 }
 .hero-video {
@@ -306,7 +306,7 @@ nav.main-nav.scrolled {
   width: 100%;
   max-width: 1240px;
   margin: 0 auto;
-  padding: 8rem 2.5rem 7rem;
+  padding: 9rem 2.5rem 7rem;
 }
 .hero-tag {
   display: inline-flex; align-items: center; gap: 0.85rem;
