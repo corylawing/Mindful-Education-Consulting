@@ -543,6 +543,117 @@ h3 {
   margin: 2.5rem 0;
 }
 
+/* ─────────────────── OUTCOMES ─────────────────── */
+.outcomes {
+  background: var(--cream);
+  padding: 6rem 2.5rem;
+  border-top: 1px solid var(--border);
+}
+.outcomes-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+.outcomes-lead h2 {
+  margin-bottom: 1.25rem;
+}
+.outcomes-intro {
+  font-family: var(--serif);
+  font-size: 1.2rem;
+  font-style: italic;
+  color: var(--muted);
+  line-height: 1.7;
+  font-weight: 300;
+}
+.outcomes-feature {
+  background: linear-gradient(135deg, var(--forest), var(--forest-deep));
+  border: 1px solid rgba(201,169,110,0.25);
+  border-radius: 4px;
+  padding: 3.5rem 3rem;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.outcomes-feature::before {
+  content: '';
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 60% 50% at 100% 0%, rgba(201,169,110,0.15), transparent),
+    radial-gradient(ellipse 60% 50% at 0% 100%, rgba(45,90,67,0.5), transparent);
+  pointer-events: none;
+}
+.outcomes-feature-num {
+  font-family: var(--serif);
+  font-size: 7rem;
+  font-weight: 300;
+  color: var(--gold);
+  line-height: 1;
+  letter-spacing: -0.04em;
+  position: relative;
+  display: inline-block;
+}
+.outcomes-feature-num .pct {
+  font-size: 3rem;
+  vertical-align: super;
+  margin-left: 4px;
+  font-weight: 400;
+  color: var(--gold-light);
+}
+.outcomes-feature-label {
+  font-family: var(--serif);
+  font-size: 1.5rem;
+  color: rgba(255,255,255,0.92);
+  font-weight: 400;
+  line-height: 1.4;
+  margin-top: 1rem;
+  position: relative;
+  max-width: 380px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.outcomes-feature-label em {
+  font-style: italic;
+  color: var(--gold-light);
+  font-weight: 400;
+}
+.outcomes-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+.outcomes-pill {
+  background: var(--warm-white);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 2rem 1.75rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  transition: all 0.3s ease;
+}
+.outcomes-pill:hover {
+  border-color: var(--gold);
+  box-shadow: var(--shadow);
+}
+.outcomes-pill-num {
+  font-family: var(--serif);
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: var(--gold);
+  line-height: 1;
+  letter-spacing: -0.02em;
+  flex-shrink: 0;
+}
+.outcomes-pill-label {
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  color: var(--muted);
+  line-height: 1.55;
+  font-weight: 400;
+}
+
 /* ─────────────────── PRESS BAR ─────────────────── */
 .press-bar {
   background: var(--forest-deep);
@@ -1832,4 +1943,20 @@ footer.main-footer {
   /* ─── Schools strip wrapping ─── */
   .schools-list { gap: 0.4rem; }
   .school-item:not(:last-child)::after { display: none; }
+  .outcomes { padding: 4rem 1.25rem; }
+  .outcomes-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+  .outcomes-feature { padding: 2.5rem 1.5rem; }
+  .outcomes-feature-num { font-size: 5rem; }
+  .outcomes-feature-num .pct { font-size: 2.2rem; }
+  .outcomes-feature-label { font-size: 1.2rem; }
+  .outcomes-row {
+    grid-template-columns: 1fr;
+    gap: 0.85rem;
+  }
+  .outcomes-pill { padding: 1.5rem 1.25rem; }
+  .outcomes-pill-num { font-size: 2rem; }
 }
